@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Framework -->
+    <TargetFramework>net10.0</TargetFramework>
+
+    <!-- Language Features -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet Package Information -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <PackageId>SoBelediye.Core.ResponseState</PackageId>
+    <Version>1.0.0</Version>
+
+    <Authors>Mehmet PALA</Authors>
+    <Company>Mehmet PALA</Company>
+
+    <Description>
+      Standardized response state management and result wrapper library for Clean Architecture .NET applications.
+    </Description>
+
+    <PackageTags>
+      validation;logging;dotnet;library;response;state;result;api;cleanarchitecture
+    </PackageTags>
+
+    <RepositoryUrl>
+      https://github.com/mehmetpala/SoBelediye
+    </RepositoryUrl>
+
+    <RepositoryType>git</RepositoryType>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- NuGet Readme -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Debugging / SourceLink -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <!-- Symbols -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- XML Documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Deterministic Build -->
+    <Deterministic>true</Deterministic>
+
+    <!-- Optional -->
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.7" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
